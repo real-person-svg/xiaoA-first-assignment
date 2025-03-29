@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="video.css">
+  <title>video</title>
+</head>
+
+<body>
+  <!-- 头部导航栏部分 -->
+  <header class="header">
+    <div class="header-main">
+      <div class="logo">
+        <img src="images/logo.svg" alt="iQIYI 爱奇艺" style="height: 30px;">
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-item">首页</a>
+        <a href="#" class="nav-item">电视剧</a>
+        <a href="#" class="nav-item">会员中心</a>
+        <a href="#" class="nav-item more-buttom">更多</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="黄雀（热搜榜第2）" class="search-bar">
+        <button type="submit"><i class="fa fa-search"></i> 搜索</button>
+      </div>
+      <div class="extra-features">
+        <span class="feature-item"><i class="fa fa-gift"></i> 首月特惠</span>
+        <span class="feature-item"><i class="fa fa-sun-o"></i> 27°</span>
+        <span class="feature-item"><i class="fa fa-gamepad"></i> 游戏</span>
+        <span class="feature-item"><i class="fa fa-upload"></i> 上传</span>
+        <span class="feature-item"><i class="fa fa-download"></i> 客户端</span>
+        <span class="feature-item"><i class="fa fa-bolt"></i> 快捷访问</span>
+        <span class="feature-item"><i class="fa-solid fa-clock"></i> 历史</span>
+      </div>
+      <a href="#" class="login-btn">登录</a>
+    </div>
+  </header>
+
+  <!-- 登录hover部分 -->
+  <section class="user-profile-section">
+    <div class="user-login-prompt">
+      <i class="fa-solid fa-user" style="font-size: 40px;"></i>
+      <div class="prompt-text">
+        <a href="#" class="login-header" style="color: #ccc;">立即登录 ></a>
+        <p>登录同步多设备历史</p>
+      </div>
+    </div>
+    <div class="vip-promo">
+      <div class="promo-content">
+        <span class="promo-title">开通VIP会员</span>
+        <div class="promo-features">
+          <span class="feature">
+            <i class="fas fa-fire"></i> 大剧热综
+          </span>
+          <span class="feature">
+            <i class="fas fa-star"></i> 高分大片
+          </span>
+          <span class="feature">
+            <i class="fas fa-video"></i> <span class="hd">HD</span> 1080P
+          </span>
+        </div>
+      </div>
+      <a href="#" class="vip-button">
+        <span class="button-text" style="font-size: 16px;">立即开通</span>
+      </a>
+    </div>
+    <div class="watch-history">
+      <i class="fas fa-clock"></i>
+      <span class="history-title" style="font-size: 18px;">观看历史</span>
+    </div>
+    <div class="tracking-collection">
+      <i class="fas fa-list-ul"></i>
+      <span class="tracking-title" style="font-size: 18px;">在追 / 预约 / 收藏</span>
+    </div>
+    <a href="#" class="personal-center-link">
+      进入个人中心 >
+    </a>
+  </section>
+
+  <!-- 变暗部分 -->
+  <div class="dark-overlay"></div>
+
+  <!-- 登录部分 -->
+  <section class="login-section">
+    <!-- 左侧宣传区域 -->
+    <div class="left-panel">
+      <div class="promo-text">
+        <h2>登录可享会员特惠价</h2>
+        <p>新朋友享专属特惠</p>
+      </div>
+    </div>
+    <!-- 右侧登录区域 -->
+    <div class="right-panel">
+      <i class="fas fa-times close-icon"></i>
+      <ul class="login-tabs">
+        <li class="tab-item">扫码登录</li>
+        <li class="tab-item">短信登录</li>
+        <li class="tab-item login-active">密码登录</li>
+      </ul>
+      <form class="login-form">
+        <input type="text" placeholder="请输入手机号/邮箱" class="input-field">
+        <div class="password-field">
+          <input type="password" placeholder="请输入密码" class="input-field">
+        </div>
+        <a href="#" class="forgot-password">忘记密码</a>
+        <button type="submit" class="login-button">登录</button>
+        <div class="other-login">其它方式登录</div>
+        <div class="social-login">
+          <a href="#" class="social-icon">
+            <i class="fab fa-weixin"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-qq"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-weibo"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-alipay"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="agreement">
+          <input type="checkbox" id="agree">
+          <label for="agree">同意《用户协议》和《隐私条款》</label>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 更多部分 -->
+  <section class="more-section">
+    <div class="more-category">综艺</div>
+    <div class="more-category">少儿</div>
+    <div class="more-category">动漫</div>
+    <div class="more-category">纪录片</div>
+    <div class="more-category">免费</div>
+    <div class="more-category">短视频</div>
+    <div class="more-category">体育</div>
+    <div class="more-category">云影院</div>
+    <div class="more-category">新片预告</div>
+    <div class="more-category">风云榜</div>
+    <div class="more-category">游戏</div>
+    <div class="more-category">传奇游戏库</div>
+    <div class="more-category">知识</div>
+    <div class="more-category">直播</div>
+    <div class="more-category">公益</div>
+    <div class="more-category">小说</div>
+    <div class="more-category">漫画</div>
+    <div class="more-category">VR</div>
+    <div class="more-category">热点</div>
+    <div class="more-category">娱乐</div>
+    <div class="more-category">音乐</div>
+    <div class="more-category">搞笑</div>
+    <div class="more-category">汽车</div>
+    <div class="more-category">资讯</div>
+    <div class="more-category">生活</div>
+    <div class="more-category">母婴</div>
+    <div class="more-category">健康</div>
+    <div class="more-category">科技</div>
+  </section>
+
+  <!-- 右侧侧边栏部分 -->
+  <section class="video-section">
+    <!-- 顶部导航和提示 -->
+    <div class="top-nav">
+      <span class="nav-item eposide">视频</span>
+      <span class="nav-item discussion">讨论 <span class="discussion-num">7279</span></span>
+      <span class="nav-item">游戏</span>
+    </div>
+
+    <!-- 剧集部分 -->
+    <div class="eposide-detail">
+      <!-- 登录提示 -->
+      <div class="login-prompt">
+        注册登录送VIP大礼包 <a href="#" class="login-link">立即登录</a>
+        <i class="fas fa-times header-close-icon"></i>
+      </div>
+      <!-- 剧集信息 -->
+      <div class="drama-info">
+        <h2 class="drama-title">西游记续集</h2>
+        <a href="#" class="detail-link" style="color: #ccc;">详情></a>
+        <div class="drama-meta">
+          <i class="fas fa-fire"></i> <span class="hot-num">1921</span>
+          <span class="score">9.1分</span>
+          <span class="genre">古装</span>
+          <span class="genre">神话</span>
+          <span class="genre">文学改编</span>
+        </div>
+        <div class="drama-actions">
+          <button class="btn add-follow">加追</button>
+          <button class="btn download">下载</button>
+          <button class="btn share">分享</button>
+          <div class="more-actions">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="vip-promo">
+          <div class="promo-main">
+            <span class="header-promo-text">基础会员首月特惠</span>
+            <span class="promo-desc">院线新片·专属弹幕·1080p</span>
+          </div>
+          <button class="btn vip-btn">开通会员</button>
+        </div>
+      </div>
+
+      <!-- 选集 -->
+      <div class="episode-select" style="margin-bottom: 20px;">
+        <span class="select-title" style="margin-right: 10px;">选集</span>
+        <span class="episode-total">16集全</span>
+        <div class="episode-buttons">
+          <button class="episode-btn current">1</button>
+          <button class="episode-btn">2</button>
+          <button class="episode-btn">3</button>
+          <button class="episode-btn">4</button>
+          <button class="episode-btn">5</button>
+          <button class="episode-btn">6</button>
+          <button class="episode-btn">7</button>
+          <button class="episode-btn">8</button>
+          <button class="episode-btn">9</button>
+          <button class="episode-btn">10</button>
+          <button class="episode-btn">11</button>
+          <button class="episode-btn">12</button>
+          <button class="episode-btn">13</button>
+          <button class="episode-btn">14</button>
+          <button class="episode-btn">15</button>
+          <button class="episode-btn">16</button>
+        </div>
+        <a href="#" class="view-all">查看全部(16)</a>
+      </div>
+
+      <!-- 广告 -->
+      <div class="ad-section">
+        <img src="images/part31.jpg" alt="广告">
+      </div>
+
+      <!-- 猜你喜欢 -->
+      <div class="recommendation">
+        <h3 class="reco-title" style="margin-bottom: 10px;">猜你喜欢</h3>
+        <div class="reco-list">
+          <div class="reco-item">
+            <img src="images/part41.webp" alt="三国演义">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">84集全</p>
+            <h4 class="reco-drama">三国演义</h4>
+            <p class="reco-desc">三国鼎立群雄争霸</p>
+          </div>
+          <div class="reco-item">
+            <img src="images/part42.webp" alt="水浒传">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">43集全</p>
+            <h4 class="reco-drama">水浒传</h4>
+            <p class="reco-desc">一百零八好汉梁山起义</p>
+          </div>
+          <div class="reco-item">
+            <img src="images/part43.webp" alt="观世音传奇">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">20集全</p>
+            <h4 class="reco-drama">观世音传奇</h4>
+            <p class="reco-desc">转世人间度醒众生</p>
+          </div>
+          <div class="reco-item">
+            <img src="images/part44.webp" alt="王宝钏与薛平贵">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">41集全</p>
+            <h4 class="reco-drama">王宝钏与薛平贵</h4>
+            <p class="reco-desc">荡气回肠的爱情故事</p>
+          </div>
+          <div class="reco-item">
+            <img src="images/part45.webp" alt="聊斋喜剧系列">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">20集全</p>
+            <h4 class="reco-drama">聊斋喜剧系列</h4>
+            <p class="reco-desc">另类聊斋搞笑上演</p>
+          </div>
+          <div class="reco-item">
+            <img src="images/part46.webp" alt="隋唐演义">
+            <span class="free-tag">免费</span>
+            <p class="reco-genre">电视剧</p>
+            <p class="reco-episode">20集全</p>
+            <h4 class="reco-drama">隋唐演义</h4>
+            <p class="reco-desc">错综复杂 权力斗争</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 评论部分 -->
+    <div class="comment-section">
+      <!-- 筛选标签 -->
+      <div class="filter-tags">
+        <span class="tag active">
+          <i class="fas fa-fire"></i> 最热
+        </span>
+        <span class="tag">
+          <i class="far fa-clock"></i> 最新
+        </span>
+      </div>
+
+      <!-- 评论列表 -->
+      <ul class="comment-list">
+        <!-- 第一条评论 -->
+        <li class="comment-item">
+          <div class="comment-header">
+            <img src="images/part21.webp" alt="用户头像" class="avatar">
+            <span class="username">简单快乐^_^</span>
+          </div>
+          <div class="comment-content">
+            <p>我2002年的。我也爱看这个，好喜欢猪八戒 🐷 。我最爱吃猪耳朵了[愉快][愉快][愉快]</p>
+            <div class="comment-meta">
+              <span class="date">2019-04-07</span>
+              <a href="#" class="reply-link">回复</a>
+              <span class="like-count">
+                <i class="far fa-heart"></i> 2162
+              </span>
+              <i class="far fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <!-- 回复 -->
+          <ul class="reply-list">
+            <li class="reply-item">
+              <div class="reply-header">
+                <img src="images/part22.webp" alt="用户头像" class="avatar">
+                <span class="username">简单快乐^_^</span>
+              </div>
+              <div class="reply-content">
+                <p>你不要吃猪肉撒[呲牙][呲牙][呲牙][呲牙]//@$柳岸 👍 你这个娃娃不厚道啊[尴尬]</p>
+                <div class="reply-meta">
+                  <span class="date">2019-07-19</span>
+                  <a href="#" class="reply-link">回复</a>
+                  <span class="like-count">
+                    <i class="far fa-heart"></i> 132
+                  </span>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="reply-expand">
+                <a href="#" class="expand-link">展开207条回复</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- 第二条评论 -->
+        <li class="comment-item">
+          <div class="comment-header">
+            <img src="images/part23.webp" alt="用户头像" class="avatar">
+            <span class="username">这次不重名了吧</span>
+          </div>
+          <div class="comment-content">
+            <p>90后，越大越发现能记住的就那几年看的那些老电视，射雕系列，天龙八部，西游记，三国，刘罗锅，纪晓岚，康熙王朝等等。。新的电视剧看完就忘。</p>
+            <div class="comment-meta">
+              <span class="date">2019-09-01</span>
+              <a href="#" class="reply-link">回复</a>
+              <span class="like-count">
+                <i class="far fa-heart"></i> 747
+              </span>
+              <i class="far fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <!-- 回复 -->
+          <ul class="reply-list">
+            <li class="reply-item">
+              <div class="reply-header">
+                <img src="images/part24.webp" alt="用户头像" class="avatar">
+                <span class="username">Lee Christma...</span>
+              </div>
+              <div class="reply-content">
+                <p>还有雪花女神龙、水月洞天、大旗英雄传、浣花洗剑录、小李飞刀、风云雄霸天下、鹿鼎记等等等</p>
+                <div class="reply-meta">
+                  <span class="date">2020-03-26</span>
+                  <a href="#" class="reply-link">回复</a>
+                  <span class="like-count">
+                    <i class="far fa-heart"></i> 98
+                  </span>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="reply-expand">
+                <a href="#" class="expand-link">展开50条回复</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- 第三条评论 -->
+        <li class="comment-item">
+          <div class="comment-header">
+            <img src="images/part25.webp" alt="用户头像" class="avatar">
+            <span class="username">旺旺汪汪 🌸</span>
+          </div>
+          <div class="comment-content">
+            <p>2023了，还有人在看么</p>
+            <div class="comment-meta">
+              <span class="date">2023-06-21·上海</span>
+              <a href="#" class="reply-link">回复</a>
+              <span class="like-count">
+                <i class="far fa-heart"></i> 380
+              </span>
+              <i class="far fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <!-- 回复 -->
+          <ul class="reply-list">
+            <li class="reply-item">
+              <div class="reply-header">
+                <img src="images/part26.webp" alt="用户头像" class="avatar">
+                <span class="username">出色商人</span>
+              </div>
+              <div class="reply-content">
+                <p>一直都有人在看</p>
+                <div class="reply-meta">
+                  <span class="date">2023-07-18·新疆</span>
+                  <a href="#" class="reply-link">回复</a>
+                  <span class="like-count">
+                    <i class="far fa-heart"></i> 171
+                  </span>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="reply-expand">
+                <a href="#" class="expand-link">展开51条回复</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- 第四条评论 -->
+        <li class="comment-item">
+          <div class="comment-header">
+            <img src="images/part27.webp" alt="用户头像" class="avatar">
+            <span class="username">小黑.aaaaa</span>
+          </div>
+          <div class="comment-content">
+            <p>03年的表示从小看西游记看到大，怎么看都不厌。每次看都有新的收获。2020年再来回顾一下~ [呲牙]</p>
+            <div class="comment-meta">
+              <span class="date">2020-04-13</span>
+              <a href="#" class="reply-link">回复</a>
+              <span class="like-count">
+                <i class="far fa-heart"></i> 475
+              </span>
+              <i class="far fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <!-- 回复 -->
+          <ul class="reply-list">
+            <li class="reply-item">
+              <div class="reply-header">
+                <img src="images/part28.webp" alt="用户头像" class="avatar">
+                <span class="username">Cassilia本C</span>
+              </div>
+              <div class="reply-content">
+                <p>我08年的，幼儿园的时候从我姥姥家电视上迷上的//@$Clssyの琥珀. 是吗？03年也看老版？</p>
+                <div class="reply-meta">
+                  <span class="date">2020-04-17</span>
+                  <a href="#" class="reply-link">回复</a>
+                  <span class="like-count">
+                    <i class="far fa-heart"></i> 73
+                  </span>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="reply-expand">
+                <a href="#" class="expand-link">展开31条回复</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 参与讨论输入框 -->
+    <div class="comment-input">
+      <img src="images/part29.webp" alt="用户头像" class="avatar">
+      <input type="text" placeholder="参与讨论" class="input">
+    </div>
+  </section>
+
+  <!-- 详情部分 -->
+  <section class="drama-detail-section">
+    <div class="close-button" style="text-align: right;">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="drama-header">
+      <div class="drama-cover">
+        <img src="images/part21.webp" alt="追捕封面">
+      </div>
+      <div class="drama-info">
+        <h2 class="drama-title">追捕</h2>
+        <div class="drama-meta">
+          <i class="fas fa-fire"></i> <span class="hot-num">1189</span>
+          <span class="genre">高清经典</span>
+          <span class="genre">谍战</span>
+          <span class="genre">战争</span>
+        </div>
+        <span class="episode-total">30集全</span>
+      </div>
+    </div>
+    <div class="login-prompt">
+      <span class="prompt-text">登录后解锁评分功能</span>
+      <a href="#" class="login-link">立即登录 ></a>
+    </div>
+    <div class="rating-section">
+      <div class="rating-main">
+        <div class="rating-header">
+          <h3 class="rating-title">观众推荐分</h3>
+        </div>
+        <div class="rating-value">
+          <span class="score">7.4</span>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="voter-num">158人评过</span>
+        </div>
+      </div>
+      <div class="rating-bars">
+        <div class="rating-bar">
+          <div class="bar-fill" style="width: 60%;"></div>
+        </div>
+        <div class="rating-bar">
+          <div class="bar-fill" style="width: 30%;"></div>
+        </div>
+        <div class="rating-bar">
+          <div class="bar-fill" style="width: 10%;"></div>
+        </div>
+        <div class="rating-bar">
+          <div class="bar-fill" style="width: 5%;"></div>
+        </div>
+        <div class="rating-bar">
+          <div class="bar-fill" style="width: 2%; margin-bottom: 0;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="drama-description">
+      <p>
+        三十年代，上海。兰心茹是一家医院的外科医生，独自一人带着六岁的侄子生活，她的原则是只行医救人，不过问政治，但一次偶然的事件却阴差阳错地把她推向了风口浪尖，这个沉静内敛的女人将面临一次突如其来的生死抉择。齐玉珍是兰心茹的同事，也是我中共地下党员，她几次动员兰心茹加入共产党，兰心茹都笑着推辞了，但两人依然是无话不谈的好朋友。一天，前去传递情报的齐玉珍重伤归来，她用最后的力量告诉兰心茹，让她帮忙把一个情报传递出去，兰心茹答应了。
+      </p>
+    </div>
+    <div class="cast-section">
+      <h3 class="cast-title" style="margin-bottom: 10px;">演职员</h3>
+      <div class="cast-list">
+        <div class="cast-item">
+          <img src="images/part22.webp" alt="林龙">
+          <div class="cast-info">
+            <span class="cast-name">林龙</span>
+            <span class="cast-role">导演</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part23.webp" alt="海清">
+          <div class="cast-info">
+            <span class="cast-name">海清</span>
+            <span class="cast-role">兰心茹</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part24.webp" alt="吴秀波">
+          <div class="cast-info">
+            <span class="cast-name">吴秀波</span>
+            <span class="cast-role">刘天舒</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part24.webp" alt="邵兵">
+          <div class="cast-info">
+            <span class="cast-name">邵兵</span>
+            <span class="cast-role">陈占豪</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part25.webp" alt="赵毅维">
+          <div class="cast-info">
+            <span class="cast-name">赵毅维</span>
+            <span class="cast-role">黄维君</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part26.webp" alt="李玥">
+          <div class="cast-info">
+            <span class="cast-name">李玥</span>
+            <span class="cast-role">向秀娟</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part26.webp" alt="袁苑">
+          <div class="cast-info">
+            <span class="cast-name">袁苑</span>
+            <span class="cast-role">金城彪</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part27.webp" alt="李文捷">
+          <div class="cast-info">
+            <span class="cast-name">李文捷</span>
+            <span class="cast-role">齐玉珍</span>
+          </div>
+        </div>
+        <div class="cast-item">
+          <img src="images/part28.webp" alt="郑颜柳">
+          <div class="cast-info">
+            <span class="cast-name">郑颜柳</span>
+            <span class="cast-role">编剧</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频播放部分 -->
+  <section class="video-container">
+    <img src="images/part23.webp" alt="video">
+  </section>
+
+  <script src="video.js"></script>
+</body>
+
+</html>

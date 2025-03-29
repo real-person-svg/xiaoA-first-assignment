@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <title>iQIYI</title>
+</head>
+
+<body>
+  <!-- 头部导航栏部分 -->
+  <header class="header-container">
+    <div class="header-main">
+      <div class="logo-container">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="哪吒之魔童降世" class="search-input">
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i> 搜索</button>
+      </div>
+      <div class="feature-container">
+        <div class="feature-item special-offer">首月特惠</div>
+        <div class="feature-item weather">
+          <i class="fa-solid fa-moon weather-icon"></i>
+          <span class="weather-temperature">24°</span>
+        </div>
+        <div class="feature-item game"><i class="fa-solid fa-gamepad"></i> 游戏</div>
+        <div class="feature-item upload"><i class="fa-solid fa-upload"></i> 上传</div>
+        <div class="feature-item client"><i class="fa-solid fa-download"></i> 客户端</div>
+        <div class="feature-item shortcut"><i class="fa-solid fa-bolt"></i> 快捷访问</div>
+        <div class="feature-item history"><i class="fa-solid fa-clock"></i> 历史</div>
+      </div>
+      <div class="login-container">
+        <button class="header-login-button"><i class="fa-solid fa-user"></i> 登录</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 变暗部分 -->
+  <div class="dark-overlay"></div>
+
+  <!-- 登录hover部分 -->
+  <section class="user-profile-section">
+    <div class="user-login-prompt">
+      <i class="fa-solid fa-user" style="font-size: 40px;"></i>
+      <div class="prompt-text">
+        <a href="#" class="login-header">立即登录 ></a>
+        <p>登录同步多设备历史</p>
+      </div>
+    </div>
+    <div class="vip-promo">
+      <div class="promo-content">
+        <span class="promo-title">开通VIP会员</span>
+        <div class="promo-features">
+          <span class="feature">
+            <i class="fas fa-fire"></i> 大剧热综
+          </span>
+          <span class="feature">
+            <i class="fas fa-star"></i> 高分大片
+          </span>
+          <span class="feature">
+            <i class="fas fa-video"></i> <span class="hd">HD</span> 1080P
+          </span>
+        </div>
+      </div>
+      <a href="#" class="vip-button">
+        <span class="button-text" style="font-size: 16px;">立即开通</span>
+      </a>
+    </div>
+    <div class="watch-history">
+      <i class="fas fa-clock"></i>
+      <span class="history-title" style="font-size: 18px;">观看历史</span>
+    </div>
+    <div class="tracking-collection">
+      <i class="fas fa-list-ul"></i>
+      <span class="tracking-title" style="font-size: 18px;">在追 / 预约 / 收藏</span>
+    </div>
+    <a href="#" class="personal-center-link">
+      进入个人中心 >
+    </a>
+  </section>
+
+  <!-- 登录部分 -->
+  <section class="login-section">
+    <!-- 左侧宣传区域 -->
+    <div class="left-panel">
+      <div class="promo-text">
+        <h2>登录可享会员特惠价</h2>
+        <p style="font-size: 16px;">新朋友享专属特惠</p>
+      </div>
+    </div>
+    <!-- 右侧登录区域 -->
+    <div class="right-panel">
+      <i class="fas fa-times close-icon"></i>
+      <ul class="login-tabs">
+        <li class="tab-item">扫码登录</li>
+        <li class="tab-item">短信登录</li>
+        <li class="tab-item active">密码登录</li>
+      </ul>
+      <form class="login-form">
+        <input type="text" placeholder="请输入手机号/邮箱" class="input-field">
+        <div class="password-field">
+          <input type="password" placeholder="请输入密码" class="input-field">
+        </div>
+        <a href="#" class="forgot-password">忘记密码</a>
+        <button type="submit" class="login-button">登录</button>
+        <div class="other-login">其它方式登录</div>
+        <div class="social-login">
+          <a href="#" class="social-icon">
+            <i class="fab fa-weixin"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-qq"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-weibo"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-alipay"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="agreement">
+          <input type="checkbox" id="agree" style="margin-right: 10px;">
+          <label for="agree">同意《用户协议》和《隐私条款》</label>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 侧边栏部分 -->
+  <section class="nav-menu">
+    <div class="menu-item">
+      <i class="fa-solid fa-house"></i>
+      <span>首页</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-video"></i>
+      <span>微剧 <span class="badge">上万部</span></span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-coins"></i>
+      <span>免费</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-play"></i>
+      <span>短视频</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-crown"></i>
+      <span>会员中心</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-fire"></i>
+      <span>北上</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-fire"></i>
+      <span>黄雀</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-tv"></i>
+      <span>电视剧</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-film"></i>
+      <span>电影</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-cloud"></i>
+      <span>云影院</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>综艺</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-child"></i>
+      <span>少儿</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-grin"></i>
+      <span>动漫</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-video"></i>
+      <span>纪录片</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-gamepad"></i>
+      <span>游戏</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-video"></i>
+      <span>传奇游戏库</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-person-running"></i>
+      <span>体育</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-book"></i>
+      <span>知识</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-video"></i>
+      <span>直播</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-newspaper"></i>
+      <span>新片预告</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-star"></i>
+      <span>风云榜</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-heart"></i>
+      <span>公益</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-book"></i>
+      <span>小说</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-book-open"></i>
+      <span>漫画</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-glasses"></i>
+      <span>VR</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-bolt"></i>
+      <span>热点</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-music"></i>
+      <span>娱乐</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-music"></i>
+      <span>音乐</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-laugh"></i>
+      <span>搞笑</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-car"></i>
+      <span>汽车</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-newspaper"></i>
+      <span>资讯</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-mug-saucer"></i>
+      <span>生活</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-baby"></i>
+      <span>母婴</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-heartbeat"></i>
+      <span>健康</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa-solid fa-rocket"></i>
+      <span>科技</span>
+    </div>
+    <div class="footer-item">公司介绍</div>
+    <div class="footer-item">专业内容合作</div>
+    <div class="footer-item">广告及IP衍生品合作</div>
+    <div class="footer-item">VIP会员采购及合作</div>
+    <div class="footer-item">爱奇艺iQ号分账合作</div>
+    <div class="footer-item">用户协议 隐私政策</div>
+    <div class="footer-item">营业执照</div>
+    <div class="footer-item">京ICP备11032965号</div>
+    <div class="footer-item">信息网络传播视听节目许可证</div>
+    <div class="footer-item copyright">Copyright © 2025 爱奇艺 All Rights Reserved</div>
+  </section>
+
+  <!-- 主体内容部分 -->
+  <main class="main-container">
+    <!-- 轮播视频部分 -->
+    <div class="background tiaozhuan">
+      <div class="right-sidebar">
+        <ul>
+          <li class="tiaozhuan luenbo-item">北上</li>
+          <li class="tiaozhuan luenbo-item">无限月灵</li>
+          <li class="tiaozhuan luenbo-item">黄雀</li>
+          <li class="tiaozhuan luenbo-item">800%爆率!</li>
+          <li class="tiaozhuan luenbo-item">种地吧第3季</li>
+          <li class="tiaozhuan luenbo-item">燃罪</li>
+          <li class="tiaozhuan luenbo-item">恶行之外</li>
+          <li class="tiaozhuan luenbo-item">新大陆，新玩法</li>
+          <li class="tiaozhuan luenbo-item">超能立方</li>
+          <li class="tiaozhuan luenbo-item">学习时刻</li>
+          <li class="tiaozhuan luenbo-item">我们的爸爸</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 视频展示部分 -->
+    <section class="video-section">
+      <nav class="video-nav">
+        <a href="#">正在热播</a>
+        <a href="#">推荐</a>
+        <a href="#">最热</a>
+        <a href="#">最新</a>
+      </nav>
+      <div class="video-container">
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part21.webp" alt="幸存者">
+          </div>
+          <div class="video-info">
+            <span class="free-tag">免费</span>
+            <p class="video-title">幸存者</p>
+            <p class="video-desc">抗日英雄悲壮牺牲</p>
+            <p class="video-episodes">26集全</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part22.webp" alt="诛寇行动">
+          </div>
+          <div class="video-info">
+            <span class="free-tag">免费</span>
+            <p class="video-title">诛寇行动</p>
+            <p class="video-desc">粉碎敌人的阴谋</p>
+            <p class="video-episodes">31集全</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part23.webp" alt="紧急行动">
+          </div>
+          <div class="video-info">
+            <span class="free-tag">免费</span>
+            <p class="video-title">紧急行动</p>
+            <p class="video-desc">任天野演绎抗日传奇</p>
+            <p class="video-episodes">35集全</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part24.webp" alt="杀出黎明">
+          </div>
+          <div class="video-info">
+            <span class="free-tag">免费</span>
+            <p class="video-title">杀出黎明</p>
+            <p class="video-desc">家仇国恨 革命救国</p>
+            <p class="video-episodes">36集全</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part210.jpg" alt="广告">
+          </div>
+          <div class="video-info">
+            <span class="ad-tag">广告</span>
+            <p class="video-title">道士无限月灵版本</p>
+            <p class="video-desc">新传奇+新玩法=怎么爽怎么玩! 限时入口</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part26.webp" alt="母妃攻略手册">
+          </div>
+          <div class="video-info">
+            <span class="new-tag">昨日上新</span>
+            <p class="video-title">母妃攻略手册</p>
+            <p class="video-desc">以魂为契 破局重生</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part27.webp" alt="黄雀">
+          </div>
+          <div class="video-info">
+            <span class="free-tag">限免中</span>
+            <p class="video-title">黄雀</p>
+            <p class="video-desc">内讧！佛爷暴力威胁黎小莲</p>
+            <p class="video-episodes">限免3-5集</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part28.webp" alt="熊出没之小小世界 第2季">
+          </div>
+          <div class="video-info">
+            <span class="new-tag">昨日上新</span>
+            <p class="video-title">熊出没之小小世界 第2季</p>
+            <p class="video-desc">熊强三人微观世界奇遇</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part29.webp" alt="超能立方">
+          </div>
+          <div class="video-info">
+            <span class="exclusive-tag">独播</span>
+            <p class="video-title">超能立方</p>
+            <p class="video-desc">超A轮回？恭迎世界之王</p>
+            <p class="video-episodes">昨日上新</p>
+          </div>
+        </div>
+        <div class="video-item tiaozhuan">
+          <div class="video-image-box">
+            <img src="images/part25.webp" alt="恶行之外">
+          </div>
+          <div class="video-info">
+            <span class="vip-tag">VIP</span>
+            <p class="video-title">恶行之外</p>
+            <p class="video-desc">古天乐林家栋宿命对决</p>
+            <p class="video-episodes">昨日上新</p>
+          </div>
+        </div>
+      </div>
+      <div class="ad-container">
+        <div class="ad-item tiaozhuan">
+          <div class="ad-image-box">
+            <img src="images/part31.jpg" alt="广告">
+          </div>
+          <div class="video-info">
+            <p class="video-title">道士无限月灵版本</p>
+            <p class="video-desc">新传奇+新玩法=怎么爽怎么玩! 限时入口</p>
+          </div>
+        </div>
+        <div class="ad-item tiaozhuan">
+          <div class="ad-image-box">
+            <img src="images/part32.jpg" alt="广告">
+          </div>
+          <div class="video-info">
+            <p class="video-title">道士无限月灵版本</p>
+            <p class="video-desc">新传奇+新玩法=怎么爽怎么玩! 10W+在线</p>
+          </div>
+        </div>
+        <div class="ad-item tiaozhuan">
+          <div class="ad-image-box">
+            <img src="images/part33.jpg" alt="广告">
+          </div>
+          <div class="video-info">
+            <p class="video-title">高爆打金 无限攻速</p>
+            <p class="video-desc">【私人定制】绿色高爆打金，全自动挂机回收! 龙脉打金传奇</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 猜你喜欢部分 -->
+    <section class="recommend-section">
+      <h2>猜你喜欢</h2>
+      <div class="recommend-container">
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part41.webp" alt="幸存者">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">26集全</p>
+            <p class="title">幸存者</p>
+            <p class="desc">抗日英雄悲壮牺牲</p>
+            <div class="tags">
+              <span>抗日战争</span>
+              <span>反特谍战</span>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part42.webp" alt="西游记">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">25集全</p>
+            <p class="title">西游记</p>
+            <p class="desc">名著改编经典版本</p>
+            <div class="tags">
+              <span>古装神话</span>
+              <span>四大名著</span>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part43.webp" alt="西游记续集">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">16集全</p>
+            <p class="title">西游记续集</p>
+            <p class="desc">原班人马延续经典</p>
+            <div class="tags">
+              <span>古装神话</span>
+              <span>四大名著</span>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part44.webp" alt="花开山乡">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">34集全</p>
+            <p class="title">花开山乡</p>
+            <p class="desc">王雷李小萌振兴农村</p>
+            <div class="tags">
+              <span>乡村振兴</span>
+              <span>乡村题材</span>
+              <span>高希希</span>
+              <span>王雷</span>
+              <span>李小萌</span>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part45.webp" alt="敢死队">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">32集全</p>
+            <p class="title">敢死队</p>
+            <p class="desc">与日寇殊死搏杀的故事</p>
+            <div class="tags">
+              <span>抗日战争</span>
+              <span>战争传奇</span>
+              <span>于立清</span>
+              <span>宋佳伦</span>
+              <span>张小斐</span>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-item tiaozhuan">
+          <div class="recommend-image">
+            <img src="images/part46.webp" alt="新敌后武工队">
+          </div>
+          <div class="recommend-info">
+            <span class="free-tag">免费</span>
+            <p class="category">电视剧</p>
+            <p class="episodes">26集全</p>
+            <p class="title">新敌后武工队</p>
+            <p class="desc">铁血军团威震敌胆</p>
+            <div class="tags">
+              <span>抗日战争</span>
+              <span>战争传奇</span>
+              <span>何冰</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+
+</html>
