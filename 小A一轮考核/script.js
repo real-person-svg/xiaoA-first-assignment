@@ -70,3 +70,14 @@ alignElement('.header-login-button', '.user-profile-section');
 window.addEventListener('resize', function () {
   alignElement('.header-login-button', '.user-profile-section');
 });
+
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+
+searchInput.addEventListener('mouseenter',()=>{
+  searchContainer.style.borderColor = '#999';
+})
+
+searchInput.addEventListener('mouseleave',()=>{
+  searchContainer.style.borderColor = 'transparent';
+})

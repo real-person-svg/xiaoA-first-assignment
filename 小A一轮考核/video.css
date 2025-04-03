@@ -178,6 +178,12 @@ ul {
   display: block;
 }
 
+.info-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* 登录提示 */
 .user-login-prompt {
   display: flex;
@@ -201,11 +207,6 @@ ul {
 /* 剧集信息 */
 .drama-info {
   margin-bottom: 20px;
-}
-
-.drama-title {
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .drama-meta {
@@ -784,7 +785,7 @@ ul {
 
 .drama-title {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin: 0 10px 0 0;
 }
 
 .hot-num {
