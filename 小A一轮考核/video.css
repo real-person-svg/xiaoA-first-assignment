@@ -117,7 +117,7 @@ ul {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .login-btn {
@@ -133,7 +133,7 @@ ul {
 
 .video-right-section {
   position: fixed;
-  top: 51px;
+  top: 47px;
   right: 0;
   width: 400px;
   height: 100vh;
@@ -161,7 +161,7 @@ ul {
 /* 顶部导航 */
 .top-nav {
   position: fixed;
-  top: 51px;
+  top: 47px;
   right: 0;
   width: 400px;
   background-color: #333;
@@ -433,11 +433,11 @@ ul {
 
 .video-container {
   position: absolute;
-  top: 51px;
+  top: 47px;
   left: 0;
   background-color: #222;
   width: calc(100% - 400px);
-  height: calc(100vh - 51px);
+  height: calc(100vh - 47px);
   overflow-y: hidden;
 }
 

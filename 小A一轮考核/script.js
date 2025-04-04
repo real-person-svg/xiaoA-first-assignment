@@ -9,7 +9,7 @@ tiaoZhuans.forEach((tiaoZhan) => {
 });
 
 const backgroundImages = [
-  'url("images/part21.webp")',
+  'url("images/part41.webp")',
   'url("images/part22.webp")',
   'url("images/part23.webp")',
   'url("images/part24.webp")',

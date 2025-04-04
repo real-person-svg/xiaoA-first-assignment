@@ -94,14 +94,14 @@ ul {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
-  font-size: 14px;
+  font-size: 12px;
   padding: 3px 7px;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 
 .feature-item i {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
@@ -222,6 +222,55 @@ ul {
   background-repeat: no-repeat;
   z-index: -1;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.media-controls {
+  width: 50%;
+  transform: translate(100px,370px);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  color: #e7e7e7;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* 针对webkit内核浏览器的前缀 */
+  background-color: rgba(255, 255, 255, 0.3); /* 半透明背景颜色 */
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.play-button i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.play-button span {
+  font-size: 16px;
+  color:#e7e7e7;
+}
+
+.mute-button {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* 针对webkit内核浏览器的前缀 */
+  background-color: rgba(255, 255, 255, 0.3); /* 半透明背景颜色 */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.mute-button i {
+  font-size: 20px;
+  color:#e7e7e7;
 }
 
 .right-sidebar {
