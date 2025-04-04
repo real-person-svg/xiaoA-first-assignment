@@ -28,7 +28,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .logo-container {
@@ -72,7 +72,7 @@ ul {
   cursor: pointer;
 }
 
-.search-input:hover+ .search-button {
+.search-input:hover+.search-button {
   background: linear-gradient(to right, #4ca8ca, #52b45a);
 }
 
@@ -84,7 +84,9 @@ ul {
 
 .feature-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
   background: linear-gradient(to bottom, #acacad, #7b7c7c);
   -webkit-background-clip: text;
@@ -92,9 +94,15 @@ ul {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
-  padding: 5px 10px;
+  font-size: 14px;
+  padding: 3px 7px;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+
+.feature-item i {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .feature-item:hover {
@@ -105,10 +113,6 @@ ul {
   border: 1px solid #fff;
 }
 
-.feature-item i {
-  margin-right: 5px;
-}
-
 .special-offer {
   background-color: #555;
   padding: 5px 10px;
@@ -117,10 +121,6 @@ ul {
 
 .weather {
   gap: 0;
-}
-
-.weather-icon {
-  font-size: 20px;
 }
 
 .login-container {
@@ -226,7 +226,7 @@ ul {
 
 .right-sidebar {
   float: right;
-  transform: translateX(-100%);
+  transform: translateX(-100%) translateY(20px);
   height: 100%;
   width: 200px;
 }
@@ -250,6 +250,10 @@ ul {
 }
 
 .right-sidebar li:hover {
+  font-size: 20px;
+}
+
+.right-sidebar li.activefont {
   font-size: 20px;
 }
 
@@ -749,7 +753,8 @@ ul {
 .vip-button {
   background-color: green;
   color: #fff;
-  padding: 7px 15px;
+  margin: 7px 0;
+  padding: 5px 10px;
   border-radius: 20px;
   display: flex;
   align-items: center;

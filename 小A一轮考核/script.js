@@ -1,4 +1,6 @@
 const tiaoZhuans = document.querySelectorAll('.tiaozhuan');
+let currentIndex = 0;
+let interval;
 
 tiaoZhuans.forEach((tiaoZhan) => {
   tiaoZhan.addEventListener('click', () => {
@@ -29,6 +31,31 @@ luenboItems.forEach((luenboItem, index) => {
   });
 });
 
+
+//页面自动轮播的开启和停止
+function autoplay() {
+  interval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % backgroundImages.length;
+    document.querySelector('.background').style.backgroundImage = backgroundImages[currentIndex];
+    luenboItems.forEach((item) => {
+      item.classList.remove('activefont');
+    })
+    luenboItems[currentIndex].classList.add('activefont');
+  }, 3000)
+}
+
+autoplay();
+
+document.querySelector('.background').addEventListener('mouseenter', () => {
+  clearInterval(interval);
+})
+
+document.querySelector('.background').addEventListener('mouseleave', () => {
+  autoplay();
+})
+
+
+//点击和鼠标进入登录框分别的效果
 const loginContainer = document.querySelector('.login-container');
 const loginSection = document.querySelector('.login-section');
 const closeIcon = document.querySelector('.close-icon');
@@ -74,10 +101,10 @@ window.addEventListener('resize', function () {
 const searchContainer = document.querySelector('.search-container');
 const searchInput = document.querySelector('.search-input');
 
-searchInput.addEventListener('mouseenter',()=>{
+searchInput.addEventListener('mouseenter', () => {
   searchContainer.style.borderColor = '#999';
 })
 
-searchInput.addEventListener('mouseleave',()=>{
+searchInput.addEventListener('mouseleave', () => {
   searchContainer.style.borderColor = 'transparent';
 })
