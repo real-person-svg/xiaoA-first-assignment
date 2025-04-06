@@ -280,6 +280,7 @@ ul {
 .promo-main {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   align-items: flex-start;
   margin-bottom: 10px;
 }
@@ -299,6 +300,7 @@ ul {
   background-color: #f5d79c;
   color: #333;
   border: none;
+  margin: 5px 0;
   padding: 8px 15px;
   border-radius: 40px;
   cursor: pointer;

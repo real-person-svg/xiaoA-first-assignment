@@ -26,8 +26,18 @@ const luenboItems = document.querySelectorAll('.luenbo-item');
 
 luenboItems.forEach((luenboItem, index) => {
   luenboItem.addEventListener('mouseenter', () => {
+    luenboItems.forEach((item) => {
+      item.classList.remove('activefont');
+    })
+    luenboItem.classList.add('activefont');
+    clearInterval(interval);
     const backgroundImage = backgroundImages[index];
     document.querySelector('.background').style.backgroundImage = backgroundImage;
+  });
+  luenboItem.addEventListener('mouseleave', () => {
+    luenboItem.classList.remove('activefont');
+    document.querySelector('.background').style.backgroundImage = backgroundImages[currentIndex];
+    luenboItems[currentIndex].classList.add('activefont');
   });
 });
 
@@ -98,6 +108,7 @@ window.addEventListener('resize', function () {
   alignElement('.header-login-button', '.user-profile-section');
 });
 
+//搜索框边框的颜色变化
 const searchContainer = document.querySelector('.search-container');
 const searchInput = document.querySelector('.search-input');
 
